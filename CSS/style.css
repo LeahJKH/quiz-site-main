@@ -1,0 +1,59 @@
+body {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 937px;
+}
+@media only screen and (max-width: 580px) {
+  body {
+    height: 775px;
+  }
+  .flexcol {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1800px) and (min-width: 580px) {
+  body {
+    height: 775px;
+  }
+  .flexcol {
+    display: flex;
+    flex-direction: row;
+  }
+}
+button {
+  color: white;
+  background-color: black;
+  width: 186px;
+  height: 59px;
+  font-size: 26px;
+  border-radius: 8px;
+  margin: 20px;
+}
+header {
+  width: 100%;
+  height: 96px;
+  background-color: #323330;
+  position: absolute;
+  top: -1px;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10px;
+  color: whitesmoke;
+}
+
+#miku-quiz {
+  background: linear-gradient(90deg, #45818e, #7acbdc);
+}
+
+#JS-quiz {
+  background: linear-gradient(-90deg, #f0db4f, #323330);
+}
+
+#HTML-quiz {
+  background: linear-gradient(90deg, #e34c26, #eb5b1d);
+}
