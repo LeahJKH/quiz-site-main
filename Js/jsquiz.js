@@ -170,9 +170,10 @@ function displayResult() {
 
   for (let i = 0; i < questions.length; i++) {
     const resultItem = document.createElement("div");
+    resultItem.classList.add(questionStatus[i]);
 
     resultItem.innerHTML = `
-            <p style="margin-top: 10px; font-size: 20px">${i + 1}. ${questions[i].question}</p>
+            <p style="margin-top: 10px">${i + 1}. ${questions[i].question}</p>
             <p>Right Answer: ${questions[i].answer}</p>
             <p>Your Answer: ${userAnswers[i]}</p>
         `;
@@ -199,13 +200,11 @@ function createQuestion(currQuest) {
   for (let i = 0; i < currQuest.pickable.length; i++) {
     const radio = document.createElement("input");
     radio.setAttribute("type", "radio");
-    radio.setAttribute("name", "choice" + (i + 1));
-
+    radio.setAttribute("name", "answer");
     radio.setAttribute("value", currQuest.pickable[i]);
 
     const label = document.createElement("label");
     label.setAttribute("for", "choice" + (i + 1));
-
     label.textContent = currQuest.pickable[i];
 
     quizSpace.appendChild(radio);
