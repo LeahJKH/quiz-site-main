@@ -3,21 +3,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 937px;
+  height: 100vh;
 }
 @media only screen and (max-width: 580px) {
-  body {
-    height: 775px;
-  }
   .flexcol {
     display: flex;
     flex-direction: column;
   }
 }
 @media only screen and (max-width: 1800px) and (min-width: 580px) {
-  body {
-    height: 775px;
-  }
   .flexcol {
     display: flex;
     flex-direction: row;
