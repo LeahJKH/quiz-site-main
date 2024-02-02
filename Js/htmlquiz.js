@@ -162,7 +162,7 @@ function displayResult() {
 }
 
 buffer(questions[currentQuestionIndex]);
-counterQuestion.textContent = `${currentQuestionIndex + 1}/12`;
+counterQuestion.textContent = `${currentQuestionIndex + 1}/10`;
 
 function clearQuizSpace() {
   while (quizSpace.firstChild) {

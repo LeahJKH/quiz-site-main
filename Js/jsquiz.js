@@ -126,7 +126,7 @@ quizBtn.addEventListener("click", function () {
     if (currentQuestionIndex < questions.length) {
       clearQuizSpace();
       buffer(questions[currentQuestionIndex]);
-      counterQuestion.textContent = `${currentQuestionIndex + 1}/12`;
+      counterQuestion.textContent = `${currentQuestionIndex + 1}/10`;
 
       const selectedRadio = document.querySelector(
         `input[value="${userAnswers[currentQuestionIndex]}"]`
